@@ -10,19 +10,15 @@ import "./ConvertLib.sol";
 contract MetaCoin {
 	mapping (address => uint) balances;
 
-	uint test;
-
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
 	modifier testModifier() {
-		test++;
-		require(test > 0);
+		require(balances[msg.sender] >= 0);
 		_;
 	}
 
 	modifier testModifier2() {
-		test--;
-		require(test == 0);
+		require(balances[msg.sender] >= 0);
 		_;
 	}
 
