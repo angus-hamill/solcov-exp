@@ -1,0 +1,19 @@
+{
+  "name": "solcov-exp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@0x/sol-coverage": "^3.0.5",
+    "@0x/subproviders": "^4.1.0",
+    "web3-provider-engine": "^15.0.0"
+  }
+}
